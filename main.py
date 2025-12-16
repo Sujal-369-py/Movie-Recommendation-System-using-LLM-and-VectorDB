@@ -27,7 +27,7 @@ load_dotenv()
 #     return _model.encode(text).tolist()
 
 # ================= LOAD DATA =================
-with gzip.open("movies.json.gz", "rt", encoding="utf-8") as f:
+with open("project.movies_with_plot.json", "rt", encoding="utf-8") as f:
     data = json.load(f)
 
 rows = []
